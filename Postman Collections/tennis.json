@@ -1,0 +1,172 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "tennis",
+    "description": "TODO: Add Description",
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/users/424/status": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/users/424/status",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/users/424/status",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/users/424/status"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/users/424/status",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/mate-invite": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/mate-invite",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/mate-invite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Http:~1~1localhost:8080~1api~1mateInviterequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/mate-invite",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRoZW50aWNhdGVkVXNlciI6eyJhY2NvdW50SWQiOjQyNCwiZW1haWwiOiJtYXRlQGxhcGxhY2lhbi5ociJ9LCJ0b2tlblR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJleHBpcmF0aW9uVGltZSI6MTQ5OTI1OTk5NjEwM30.9muFDaNFqctWUr2oimleynod3GG_jF-p8wQV8nq8c_I"
+              },
+              "body": "{\n\"senderId\": 424,\n\"receiverId\": 69\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/mate-invite",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Http://localhost:8080/api/mateInviterequest": {
+      "title": "http://localhost:8080/api/mate-inviteRequest",
+      "example": {
+        "senderId": 424,
+        "receiverId": 69
+      },
+      "type": "object",
+      "properties": {
+        "senderId": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "receiverId": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "senderId",
+        "receiverId"
+      ]
+    }
+  }
+}
