@@ -70,11 +70,11 @@
     "/mate-invite": {
       "post": {
         "description": "TODO: Add Description",
-        "summary": "http://localhost:8080/api/mate-invite",
+        "summary": "http://localhost:8080/api/mate-invite1",
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate-invite",
+        "operationId": "http://localhost:8080/api/mate-invite1",
         "produces": [
           "application/json"
         ],
@@ -116,9 +116,9 @@
               "uri": "/mate-invite",
               "headers": {
                 "Content-Type": "application/json",
-                "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRoZW50aWNhdGVkVXNlciI6eyJhY2NvdW50SWQiOjQyNCwiZW1haWwiOiJtYXRlQGxhcGxhY2lhbi5ociJ9LCJ0b2tlblR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJleHBpcmF0aW9uVGltZSI6MTQ5OTI1OTk5NjEwM30.9muFDaNFqctWUr2oimleynod3GG_jF-p8wQV8nq8c_I"
+                "Authorization": "{{accessToken}}"
               },
-              "body": "{\n\"senderId\": 424,\n\"receiverId\": 69\n}"
+              "body": "{\n\"senderId\": 420,\n\"receiverId\": 69\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -130,7 +130,375 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "http://localhost:8080/api/mate-invite",
+            "x-testName": "http://localhost:8080/api/mate-invite1",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/mate-invite/sent/user/420": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/mate-invite/sent/user/420",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/mate-invite/sent/user/420",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/mate-invite/sent/user/420",
+              "headers": {
+                "Authorization": "{{accessToken}}"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/mate-invite/sent/user/420",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/mate-invite/received/user/420": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/mate-invite/received/user/420",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/mate-invite/received/user/420",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/mate-invite/received/user/420",
+              "headers": {
+                "Authorization": "{{accessToken}}",
+                "Content-Type": "application/json"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/mate-invite/received/user/420",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/login/": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/login/",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/login/",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Http:~1~1localhost:8080~1api~1login~1request"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/login/",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\n\"email\": \"mate@laplacian.hr\",\n\"password\": \"Matemate007!\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/login/",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/mate-invite/1/accept/": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/mate-invite/1/accept/",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/mate-invite/1/accept/",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/mate-invite/1/accept/",
+              "headers": {
+                "Authorization": "{{accessToken}}",
+                "Content-Type": "application/json"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/mate-invite/1/accept/",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/mate-invite/4/cancel/": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/mate-invite/4/cancel/",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/mate-invite/4/cancel/",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/mate-invite/4/cancel/",
+              "headers": {
+                "Authorization": "{{accessToken}}"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/mate-invite/4/cancel/",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/mate/user/420": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/api/mate/user/420",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/api/mate/user/420",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/mate/user/420",
+              "headers": {
+                "Authorization": "{{accessToken}}"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "http://localhost:8080/api/mate/user/420",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -166,6 +534,28 @@
       "required": [
         "senderId",
         "receiverId"
+      ]
+    },
+    "Http://localhost:8080/api/login/request": {
+      "title": "http://localhost:8080/api/login/Request",
+      "example": {
+        "email": "mate@laplacian.hr",
+        "password": "Matemate007!"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "description": "",
+          "type": "string"
+        },
+        "password": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "password"
       ]
     }
   }
