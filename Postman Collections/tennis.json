@@ -23,7 +23,7 @@
   "paths": {
     "/users/424/status": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "",
         "summary": "http://localhost:8080/api/users/424/status",
         "tags": [
           "Misc"
@@ -56,7 +56,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/users/424/status",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": ""
           }
         ],
         "x-operation-settings": {
@@ -69,7 +69,7 @@
     },
     "/mate-invite": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "Create mate invite endpoint\n",
         "summary": "http://localhost:8080/api/mate-invite1",
         "tags": [
           "Misc"
@@ -131,7 +131,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/mate-invite1",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "Create mate invite endpoint\n"
           }
         ],
         "x-operation-settings": {
@@ -144,7 +144,7 @@
     },
     "/mate-invite/sent/user/420": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "get sent mate invites for user",
         "summary": "http://localhost:8080/api/mate-invite/sent/user/420",
         "tags": [
           "Misc"
@@ -188,7 +188,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/mate-invite/sent/user/420",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "get sent mate invites for user"
           }
         ],
         "x-operation-settings": {
@@ -201,7 +201,7 @@
     },
     "/mate-invite/received/user/420": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "get all received mate invites for user",
         "summary": "http://localhost:8080/api/mate-invite/received/user/420",
         "tags": [
           "Misc"
@@ -253,7 +253,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/mate-invite/received/user/420",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "get all received mate invites for user"
           }
         ],
         "x-operation-settings": {
@@ -266,7 +266,7 @@
     },
     "/login/": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "login \n",
         "summary": "http://localhost:8080/api/login/",
         "tags": [
           "Misc"
@@ -320,7 +320,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/login/",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "login \n"
           }
         ],
         "x-operation-settings": {
@@ -333,7 +333,7 @@
     },
     "/mate-invite/1/accept/": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "accept invite by id ",
         "summary": "http://localhost:8080/api/mate-invite/1/accept/",
         "tags": [
           "Misc"
@@ -385,7 +385,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/mate-invite/1/accept/",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "accept invite by id "
           }
         ],
         "x-operation-settings": {
@@ -398,7 +398,7 @@
     },
     "/mate-invite/4/cancel/": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "cancel mate invite endpoint",
         "summary": "http://localhost:8080/api/mate-invite/4/cancel/",
         "tags": [
           "Misc"
@@ -442,7 +442,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/mate-invite/4/cancel/",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "cancel mate invite endpoint"
           }
         ],
         "x-operation-settings": {
@@ -455,7 +455,7 @@
     },
     "/mate/user/420": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "get mates for user endpoint",
         "summary": "http://localhost:8080/api/mate/user/420",
         "tags": [
           "Misc"
@@ -499,7 +499,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/mate/user/420",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "get mates for user endpoint"
           }
         ],
         "x-operation-settings": {
