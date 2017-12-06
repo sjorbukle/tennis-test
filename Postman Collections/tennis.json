@@ -28,7 +28,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/users/424/status",
+        "operationId": "Users424StatusGet",
         "produces": [
           "application/json"
         ],
@@ -74,7 +74,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate-invite1",
+        "operationId": "MateInvitePost2",
         "produces": [
           "application/json"
         ],
@@ -149,7 +149,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate-invite/sent/user/420",
+        "operationId": "MateInviteSentUser420Get",
         "produces": [
           "application/json"
         ],
@@ -206,7 +206,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate-invite/received/user/420",
+        "operationId": "MateInviteReceivedUser420Get",
         "produces": [
           "application/json"
         ],
@@ -271,7 +271,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/login/",
+        "operationId": "LoginPost",
         "produces": [
           "application/json"
         ],
@@ -338,7 +338,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate-invite/1/accept/",
+        "operationId": "MateInvite1AcceptGet",
         "produces": [
           "application/json"
         ],
@@ -403,7 +403,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate-invite/4/cancel/",
+        "operationId": "MateInvite4CancelGet",
         "produces": [
           "application/json"
         ],
@@ -460,7 +460,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/api/mate/user/420",
+        "operationId": "MateUser420Get",
         "produces": [
           "application/json"
         ],
