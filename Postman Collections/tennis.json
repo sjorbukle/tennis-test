@@ -522,11 +522,13 @@
       "properties": {
         "senderId": {
           "description": "",
+          "example": 424,
           "type": "integer",
           "format": "int32"
         },
         "receiverId": {
           "description": "",
+          "example": 69,
           "type": "integer",
           "format": "int32"
         }
@@ -546,10 +548,12 @@
       "properties": {
         "email": {
           "description": "",
+          "example": "mate@laplacian.hr",
           "type": "string"
         },
         "password": {
           "description": "",
+          "example": "Matemate007!",
           "type": "string"
         }
       },
