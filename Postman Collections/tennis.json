@@ -3,11 +3,7 @@
   "info": {
     "version": "1.0",
     "title": "tennis",
-    "description": "TODO: Add Description",
-    "license": {
-      "name": "MIT",
-      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
-    }
+    "description": "TODO: Add Description"
   },
   "host": "localhost:8080",
   "basePath": "/api",
