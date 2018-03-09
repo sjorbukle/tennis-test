@@ -19,7 +19,7 @@
   "paths": {
     "/users/424/status": {
       "get": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "http://localhost:8080/api/users/424/status",
         "tags": [
           "Misc"
@@ -52,7 +52,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "http://localhost:8080/api/users/424/status",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
