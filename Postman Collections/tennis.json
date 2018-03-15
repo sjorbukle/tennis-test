@@ -114,7 +114,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "{{accessToken}}"
               },
-              "body": "{\n\"senderId\": 420,\n\"receiverId\": 69\n}"
+              "body": "{\"senderId\":420,\"receiverId\":69}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -303,7 +303,7 @@
               "headers": {
                 "Content-Type": "application/json"
               },
-              "body": "{\n\"email\": \"mate@laplacian.hr\",\n\"password\": \"Matemate007!\"\n}"
+              "body": "{\"email\":\"mate@laplacian.hr\",\"password\":\"Matemate007!\"}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
