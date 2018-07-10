@@ -76,6 +76,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -83,13 +90,6 @@
             "schema": {
               "$ref": "#/definitions/Http:~1~1localhost:8080~1api~1mateInviterequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -243,6 +243,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -250,13 +257,6 @@
             "schema": {
               "$ref": "#/definitions/Http:~1~1localhost:8080~1api~1login~1request"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
