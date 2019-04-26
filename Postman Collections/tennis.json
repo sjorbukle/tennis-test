@@ -6,19 +6,22 @@
   },
   "item": [
     {
-      "_postman_id": "2336381-3bbdfce3-c934-3a2f-dd6e-2d0fde630c3a",
       "name": "http://localhost:8080/api/users/424/status",
+      "_postman_id": "2336381-3bbdfce3-c934-3a2f-dd6e-2d0fde630c3a",
       "request": {
         "method": "GET",
         "header": [],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "http://localhost:8080/api/users/424/status"
       },
       "response": []
     },
     {
-      "_postman_id": "2336381-59a5ea23-1d50-2d7e-4911-1228aa928488",
       "name": "http://localhost:8080/api/mate-invite",
+      "_postman_id": "2336381-59a5ea23-1d50-2d7e-4911-1228aa928488",
       "request": {
         "method": "POST",
         "header": [
@@ -40,8 +43,8 @@
       "response": []
     },
     {
-      "_postman_id": "2336381-66ca1f3e-1c9d-18de-0231-f74d07b2f33c",
       "name": "http://localhost:8080/api/mate-invite",
+      "_postman_id": "2336381-66ca1f3e-1c9d-18de-0231-f74d07b2f33c",
       "request": {
         "method": "POST",
         "header": [
@@ -64,8 +67,8 @@
       "response": []
     },
     {
-      "_postman_id": "2336381-4821c012-1e59-2be9-d088-0f48bccd43e6",
       "name": "http://localhost:8080/api/mate-invite/sent/user/420",
+      "_postman_id": "2336381-4821c012-1e59-2be9-d088-0f48bccd43e6",
       "request": {
         "method": "GET",
         "header": [
@@ -74,15 +77,18 @@
             "value": "{{accessToken}}"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "http://localhost:8080/api/mate-invite/sent/user/420",
         "description": "get sent mate invites for user"
       },
       "response": []
     },
     {
-      "_postman_id": "2336381-962797f5-1454-6dfb-bd68-b9b1282e5146",
       "name": "http://localhost:8080/api/mate-invite/received/user/420",
+      "_postman_id": "2336381-962797f5-1454-6dfb-bd68-b9b1282e5146",
       "request": {
         "method": "GET",
         "header": [
@@ -95,14 +101,16 @@
             "value": "application/json"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "http://localhost:8080/api/mate-invite/received/user/420",
         "description": "get all received mate invites for user"
       },
       "response": []
     },
     {
-      "_postman_id": "2336381-1690a0a7-b9ca-f9c9-8876-cd956158bfbb",
       "name": "http://localhost:8080/api/login/",
       "event": [
         {
@@ -124,6 +132,7 @@
           }
         }
       ],
+      "_postman_id": "2336381-1690a0a7-b9ca-f9c9-8876-cd956158bfbb",
       "request": {
         "method": "POST",
         "header": [
@@ -142,8 +151,8 @@
       "response": []
     },
     {
-      "_postman_id": "2336381-15fb3a7d-5153-4268-6d92-6b4c5bfdbe85",
       "name": "http://localhost:8080/api/mate-invite/1/accept/",
+      "_postman_id": "2336381-15fb3a7d-5153-4268-6d92-6b4c5bfdbe85",
       "request": {
         "method": "GET",
         "header": [
@@ -156,15 +165,18 @@
             "value": "application/json"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "http://localhost:8080/api/mate-invite/1/accept/",
         "description": "accept invite by id "
       },
       "response": []
     },
     {
-      "_postman_id": "2336381-99eddb86-2b7c-e8c4-7bdd-22f55b5e90d2",
       "name": "http://localhost:8080/api/mate-invite/4/cancel/",
+      "_postman_id": "2336381-99eddb86-2b7c-e8c4-7bdd-22f55b5e90d2",
       "request": {
         "method": "GET",
         "header": [
@@ -173,15 +185,18 @@
             "value": "{{accessToken}}"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "http://localhost:8080/api/mate-invite/4/cancel/",
         "description": "cancel mate invite endpoint"
       },
       "response": []
     },
     {
-      "_postman_id": "2336381-78098a66-c361-bd17-ed47-fe71279cbcdf",
       "name": "http://localhost:8080/api/mate/user/420",
+      "_postman_id": "2336381-78098a66-c361-bd17-ed47-fe71279cbcdf",
       "request": {
         "method": "GET",
         "header": [
@@ -190,7 +205,10 @@
             "value": "{{accessToken}}"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "http://localhost:8080/api/mate/user/420",
         "description": "get mates for user endpoint"
       },
