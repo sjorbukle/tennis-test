@@ -81,7 +81,8 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": []
       }
     },
     "/mate-invite/sent/user/420": {
@@ -110,7 +111,8 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": []
       }
     },
     "/mate-invite/received/user/420": {
@@ -146,7 +148,8 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": []
       }
     },
     "/login/": {
@@ -220,7 +223,8 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": []
       }
     },
     "/mate-invite/4/cancel/": {
@@ -249,7 +253,8 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": []
       }
     },
     "/mate/user/420": {
@@ -278,7 +283,8 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": []
       }
     }
   },
