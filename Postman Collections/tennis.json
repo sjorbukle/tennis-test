@@ -3,7 +3,6 @@
   "info": {
     "version": "1.0",
     "title": "tennis",
-    "description": "TODO: Add Description",
     "contact": {}
   },
   "host": "localhost:8080",
@@ -20,7 +19,6 @@
   "paths": {
     "/users/424/status": {
       "get": {
-        "description": "TODO: Add Description",
         "summary": "http://localhost:8080/api/users/424/status",
         "tags": [
           "Misc"
@@ -41,7 +39,6 @@
     },
     "/mate-invite": {
       "post": {
-        "description": "TODO: Add Description",
         "summary": "http://localhost:8080/api/mate-invite",
         "tags": [
           "Misc"
