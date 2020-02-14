@@ -48,6 +48,9 @@
         "produces": [
           "application/json"
         ],
+        "consumes": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "Authorization",
@@ -124,6 +127,9 @@
         "produces": [
           "application/json"
         ],
+        "consumes": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "Authorization",
@@ -159,6 +165,9 @@
         "operationId": "http://localhost:8080/api/login/",
         "deprecated": false,
         "produces": [
+          "application/json"
+        ],
+        "consumes": [
           "application/json"
         ],
         "parameters": [
@@ -197,6 +206,9 @@
         "operationId": "http://localhost:8080/api/mate-invite/1/accept/",
         "deprecated": false,
         "produces": [
+          "application/json"
+        ],
+        "consumes": [
           "application/json"
         ],
         "parameters": [
