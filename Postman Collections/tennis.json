@@ -62,7 +62,10 @@
           {
             "name": "Content-Type",
             "in": "header",
-            "required": true,
+            "required": false,
+            "enum": [
+              "application/json"
+            ],
             "type": "string",
             "description": ""
           },
@@ -141,7 +144,10 @@
           {
             "name": "Content-Type",
             "in": "header",
-            "required": true,
+            "required": false,
+            "enum": [
+              "application/json"
+            ],
             "type": "string",
             "description": ""
           }
@@ -174,7 +180,10 @@
           {
             "name": "Content-Type",
             "in": "header",
-            "required": true,
+            "required": false,
+            "enum": [
+              "application/json"
+            ],
             "type": "string",
             "description": ""
           },
@@ -222,7 +231,10 @@
           {
             "name": "Content-Type",
             "in": "header",
-            "required": true,
+            "required": false,
+            "enum": [
+              "application/json"
+            ],
             "type": "string",
             "description": ""
           }
